@@ -32,7 +32,7 @@
 ![14](images/_14.png)
 
 
-IAM role map with service account
+IAM role map with service account (Optional)
 
 ```yaml
 ---

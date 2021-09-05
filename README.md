@@ -52,6 +52,12 @@ spec:
     - key: hello-service/password
       name: password
 ```
+
+```bash
+
+kubectl get secret hello-service 
+
+```
     Reference => https://acloudguru.com/blog/engineering/fixing-5-common-aws-iam-errors
 
 
