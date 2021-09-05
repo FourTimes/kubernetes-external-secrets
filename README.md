@@ -1,5 +1,5 @@
 ```bash
-#Install the external secrets
+# Install the external secrets to auth aws 
 helm repo add external-secrets https://external-secrets.github.io/kubernetes-external-secrets/
 helm repo update
 helm install external-secrets external-secrets/kubernetes-external-secrets \
