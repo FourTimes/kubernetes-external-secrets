@@ -30,3 +30,18 @@
 ![13](images/_13.png)
 
 ![14](images/_14.png)
+
+
+IAM role map with service account
+
+```yaml
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: app
+  namespace: default
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::128506768509:role/secret-read-role
+
+```
