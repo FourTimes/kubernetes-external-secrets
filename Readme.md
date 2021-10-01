@@ -8,6 +8,19 @@ helm install external-secrets external-secrets/kubernetes-external-secrets \
 --set serviceAccount.annotations."eks\.amazonaws\.com/role-arn"='arn:aws:iam::xxxxxxx:role/secret-read-role'
 ```
 
+```bash
+
+helm install external-secrets external-secrets/kubernetes-external-secrets \
+    --set env.AWS_REGION=eu-central-1 \
+    --set securityContext.fsGroup=65534 \
+    --set serviceAccount.create=false \
+    --set serviceAccount.name=aws-load-balancer-controller
+
+
+```
+
+
+
 IAM Role Policy
 
 ```json
